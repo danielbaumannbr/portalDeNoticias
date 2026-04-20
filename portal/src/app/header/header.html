@@ -1,11 +1,26 @@
-<header class="bg-blue-900 text-white shadow-lg">
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold tracking-tight">Portal de notícias</h1>
-        <ul class="flex space-x-6 font-medium">
-            <li class="hover:text-gray-400"><a routerLink="local">Locais</a></li>
-            <li class="hover:text-gray-400"><a routerLink="regional">Regionais</a></li>
-            <li class="hover:text-gray-400"><a routerLink="internacional">Internacionais</a></li>
-       
-        </ul>
-    </nav>
+<header class="bg-slate-900 text-white shadow-2xl sticky top-0 z-50">
+  <nav class="container mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
+    
+    <div class="mb-4 md:mb-0">
+      <a routerLink="/" class="text-2xl font-extrabold tracking-tighter bg-gradient-to-r from-blue-400 to-indigo-300 bg-clip-text text-transparent hover:opacity-80 transition-opacity">
+        PORTAL DE NOTÍCIAS
+      </a>
+    </div>
+
+    <ul class="flex flex-wrap justify-center gap-6 text-sm uppercase tracking-widest font-semibold">
+      <li>
+        <a routerLink="local" class="border-b-2 border-transparent hover:border-blue-400 hover:text-blue-300 transition-all duration-300 pb-1">Locais</a>
+      </li>
+      <li>
+        <a routerLink="regional" class="border-b-2 border-transparent hover:border-blue-400 hover:text-blue-300 transition-all duration-300 pb-1">Regionais</a>
+      </li>
+      <li>
+        <a routerLink="internacional" class="border-b-2 border-transparent hover:border-blue-400 hover:text-blue-300 transition-all duration-300 pb-1">Internacionais</a>
+      </li>
+      <li>
+        <a routerLink="quem-somos" class="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-full transition-colors duration-300">Quem somos</a>
+      </li>
+    </ul>
+    
+  </nav>
 </header>
